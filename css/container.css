@@ -1,7 +1,8 @@
 .container {
-    font-family: 'Roboto', sans-serif;
-    background-image: url("../images/mountains.jpg");
-    background-repeat: space;
+    resize: both;
+    overflow: auto;
+    background-image: url("../images/gory2.jpg");
+    background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
