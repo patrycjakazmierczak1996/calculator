@@ -1,0 +1,79 @@
+.form {
+    text-align: center;
+    width: 100%;
+}
+
+.form__labelText {
+    display: table-row;
+    margin: 5px;
+    max-width: 500px;
+    padding: 5px;
+    width: auto;
+    border-radius: 5px;
+    
+}
+
+.form__field {
+    border: 1px solid rgb(77, 74, 74);
+    padding: 8px;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 15px 10px 0;
+    width: auto;
+    max-width: 300px;
+    color: rgb(14, 11, 11);
+    font-size: 15px;
+    
+}
+
+.form__field:required {
+    border-radius: 5px;
+    border-color: rgb(114, 176, 179);
+    background-color: rgba(238, 232, 232, 0.918)
+}
+
+.form__button {
+    padding: 8px;
+    background-color: rgb(22, 155, 155);
+    color: rgb(7, 15, 14);
+    border: none;
+    border-radius: 10px;
+    margin-left: 15px;
+    
+}
+
+.form__button:hover {
+    background-color: rgb(70, 200, 204);
+}
+
+.form__fieldset {
+    border-radius: 10px;
+    border: 5px solid rgba(107, 19, 19, 0.76);
+    margin: 15px 15px;
+}
+
+.form__legend {
+    color: rgb(6, 10, 10);
+    background-color: rgb(22, 155, 155);
+    border-radius: 10px;
+    margin: 10px;
+    max-width: 600px;
+    width: 50%;
+    padding: 10px;
+}
+
+.form__frame{
+    border-radius: 5px;
+    border: 2px solid rgba(107, 19, 19, 0.76);
+    margin: 15px 15px;
+}
+
+.form__footer {
+    text-align:center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 700px;
+    border-bottom: 1px solid #640b08;
+    
+}
