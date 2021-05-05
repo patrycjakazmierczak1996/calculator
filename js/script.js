@@ -1,48 +1,60 @@
-let form = document.querySelector(".js-form");
-let formInput = document.querySelector(".js-form__input");
-let formSelect = document.querySelector(".js-form__select");
-let paragraph = document.querySelector(".jsForm__paragraph--result");
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
+{
+    const calculateResult = (amount, currency) => {
 
-    let euroRate = 4.548;
-    let frankRate = 4.128;
-    let usdRate = 3.798;
-    let poundRate = 5.224;
+        const rateEUR = 4.548;
+        const rateCHF = 4.128;
+        const rateUSD = 3.798;
+        const rateGBP = 5.224;
 
-    let rates = +formInput.value;
-    let currency = formSelect.value;
+        switch (currency) {
+            case "EUR":
+                return amount / rateEUR;
 
+            case "CHF":
+                return amount / rateCHF;
 
-    let resultAmount;
-    let resultSentence = "Po przeliczeniu";
+            case "USD":
+                return amount / rateUSD;
 
-    switch (currency) {
-        case "EUR":
-            resultAmount = (rates / euroRate);
-            currencyName = "EUR";
-            break;
-        case "CHF":
-            resultAmount = (rates / frankRate);
-            currencyName = "CHF";
-            break;
-        case "USD":
-            resultAmount = (rates / usdRate);
-            currencyName = "USD";
-            break;
-        case "GBP":
-            resultAmount = (rates / poundRate);
-            currencyName = "GBP";
-            break;
-        default:
-            paragraph.innerText = "Brak kursu waluty.";
+            case "GBP":
+                return amount / rateGBP;
+
+        }
     };
-    paragraph.innerText = `${resultSentence} ${resultAmount.toFixed(2)} ${currencyName}`;
-   
-    form.addEventListener("reset", () => {
-        paragraph.innerText = "";
 
 
-    });
-});
+    const onSubmit = (event) => {
+        event.preventDefault();
+
+
+
+        const amountElement = document.querySelector(".js-form__input");
+        const currencyElement = document.querySelector(".js-form__select");
+        const paragraph = document.querySelector(".jsForm__paragraph--result");
+
+
+        const amount = +amountElement.value;
+        const currency = currencyElement.value;
+
+        const result = calculateResult(amount, currency);
+
+        paragraph.innerHTML = `${result.toFixed(2)} ${currency}`;
+
+
+    }
+
+
+    const init = () => {
+        const form = document.querySelector(".js-form");
+        form.addEventListener("submit", onSubmit);
+
+        form.addEventListener("reset", () => {
+            paragraph.innerText = ""
+
+        });
+
+    };
+    init();
+}
+
