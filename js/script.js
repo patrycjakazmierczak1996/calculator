@@ -49,10 +49,7 @@
         const form = document.querySelector(".js-form");
         form.addEventListener("submit", onSubmit);
 
-        form.addEventListener("reset", () => {
-            paragraph.innerText = ""
 
-        });
 
     };
     init();
