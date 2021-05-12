@@ -11,7 +11,8 @@ https://patrycjakazmierczak1996.github.io/calculator/
 The Currency-converter allows you to convert the Polish currency into Euro, CHF, USD or GBP.
 
 ## Technologies:
-html
-css
-ES6+ features
-BEM
+
+- HTML,
+- CSS,
+- ES6
+- +features BEM
