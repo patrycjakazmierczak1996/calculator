@@ -1,8 +1,5 @@
 .container {
-    resize: both;
-    overflow: auto;
-    background-image: url("../images/gory2.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    background-color: rgb(153, 179, 179);
+    border-radius: 10px;
+    size: medium;
 }
