@@ -43,15 +43,20 @@
 
 
     }
+    const onReset = (event) => {
+        event.preventDefault();
 
+        const paragraph = document.querySelector(".jsForm__paragraph--result");
+        paragraph.innerHTML = document.querySelector("js-form")
+    }
 
     const init = () => {
         const form = document.querySelector(".js-form");
         form.addEventListener("submit", onSubmit);
 
-
-
+        form.addEventListener("reset", onReset);
     };
     init();
 }
+
 
