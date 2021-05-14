@@ -1,6 +1,7 @@
 .form {
     text-align: center;
-    width: 100%;
+    max-width: 100%;
+    
 }
 
 .form__labelText {
@@ -10,7 +11,6 @@
     padding: 5px;
     width: auto;
     border-radius: 5px;
-    
 }
 
 .form__field {
@@ -23,7 +23,6 @@
     max-width: 300px;
     color: rgb(14, 11, 11);
     font-size: 15px;
-    
 }
 
 .form__field:required {
@@ -39,7 +38,6 @@
     border: none;
     border-radius: 10px;
     margin-left: 15px;
-    
 }
 
 .form__button:hover {
@@ -62,18 +60,24 @@
     padding: 10px;
 }
 
-.form__frame{
+.form__frame {
     border-radius: 5px;
     border: 2px solid rgba(107, 19, 19, 0.76);
     margin: 15px 15px;
 }
 
+.form__paragraph {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: medium;
+}
+
 .form__footer {
-    text-align:center;
-    margin-top: 100px;
-    margin-bottom: 20px;
-    font-size: 15px;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-size: 20px;
     font-weight: 700px;
     border-bottom: 1px solid #640b08;
-    
+    color: beige;
 }
