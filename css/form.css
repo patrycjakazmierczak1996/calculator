@@ -3,7 +3,11 @@
     max-width: 100%;
     
 }
-
+.container {
+    background-color: rgb(153, 179, 179);
+    border-radius: 10px;
+    size: medium;
+}
 .form__labelText {
     display: table-row;
     margin: 5px;
